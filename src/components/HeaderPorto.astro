@@ -1,0 +1,87 @@
+<style>
+  header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+  }
+
+  header nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  .hero {
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+</style>
+
+<section class="hero">
+  <img src="images/coding-cat.gif" alt="Kucing ngoding" class="cat-gif" />
+
+  <h1>Hallo nama saya ibnu</h1>
+  <h2
+    id="terminal-text"
+    style="font-family: monospace; color:#00ff7f; background:black; padding:10px; display:inline-block;"
+  >
+    $
+  </h2>
+
+  <script>
+    const text = "npm start // hidup kadang lancar, kadang error";
+    let i = 0;
+    function typing() {
+      if (i < text.length) {
+        document.getElementById("terminal-text").innerHTML =
+          "$ " + text.substring(0, i + 1);
+        i++;
+        setTimeout(typing, 100);
+      } else {
+        setTimeout(() => {
+          i = 0;
+          typing();
+        }, 3000); // ulang setelah 3 detik
+      }
+    }
+    typing();
+  </script>
+  <p
+    style="font-size:1.1rem; line-height:1.6; max-width:600px; margin:10px auto; color:#333;"
+  >
+    Kalau kamu nyasar ke sini, anggap aja ini terminal hidupku: kadang jalanin
+    <code
+      style="background:#1e1e1e; color:#4ec9b0; padding:2px 6px; border-radius:4px; font-family:monospace;"
+    >
+      npm start
+    </code>, kadang
+    <code
+      style="background:#1e1e1e; color:#d16969; padding:2px 6px; border-radius:4px; font-family:monospace;"
+    >
+      rm -rf /
+    </code>
+    di kehidupan nyata. Blog ini isinya random antara tutorial, eksperimen, dan jokes
+    receh — semoga bikin ketawa, bukan bikin error.
+  </p>
+
+  <p>
+    Topik yang sering saya bahas: <strong>JavaScript</strong>, <strong
+      >Astro</strong
+    >,
+    <strong>React</strong>, <strong>Linux server</strong>, dan kadang obrolan
+    receh soal kehidupan programmer.
+  </p>
+</section>

@@ -1,7 +1,6 @@
 ---
-title: 'Third post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
+title: "☕ Niat ngoding 2 jam, scroll meme 5 jam..."
+quote: "~ Productivity 0%"
 image: "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
 ---
 

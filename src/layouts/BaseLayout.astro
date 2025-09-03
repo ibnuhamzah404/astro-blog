@@ -8,14 +8,8 @@ const { title, description, image } = Astro.props;
 
 <!doctype html>
 <html lang="id">
-  <head>
-    <style>
-      footer {
-        text-align: center;
-      }
-    </style>
-    <BaseHead {title} {description} {image} />
-  </head>
+  <BaseHead {title} {description} {image} />
+
   <body>
     <Navbar />
     <slot />

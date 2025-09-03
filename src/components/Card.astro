@@ -1,0 +1,20 @@
+---
+// src/components/Card.astro
+const { title, description, meme, url } = Astro.props;
+---
+
+<a href={url}>
+  <div class="blog-card">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <div class="terminal-body">
+      <p class="prompt">ibnu@catOS:~$</p>
+      <h3>{title}</h3>
+
+      <p class="meme">{description}</p>
+    </div>
+  </div>
+</a>

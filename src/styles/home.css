@@ -1,0 +1,292 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    color: #222;
+    line-height: 1.6;
+    background-color: #fafafa;
+    background-image:
+      linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+ 
+  .posts {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .post {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  .post h2 {
+    margin-top: 0;
+  }
+  .meme {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: #f9f9f9;
+    border-left: 4px solid #ff4081;
+    border-radius: 8px;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  /* 🐱 GIF kucing */
+  .cat-gif {
+   
+    width: 120px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 1000;
+  }
+  .cat-gif:hover {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  .projects {
+max-width: 800px;
+margin: 50px auto;
+text-align: center;
+}
+
+.projects h2, .posts h2 {
+font-size: 2rem;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.projects p {
+margin-bottom: 30px;
+color: #555;
+}
+
+.project-list {
+display: grid;
+gap: 20px;
+}
+
+.project-card {
+background: white;
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+text-align: left;
+transition: transform 0.2s;
+}
+
+.project-card:hover {
+transform: rotate(-1deg) scale(1.02);
+}
+
+.project-card h3 {
+margin-top: 0;
+}
+
+.project-card a {
+display: inline-block;
+margin-top: 10px;
+text-decoration: none;
+color: #ff4081;
+font-weight: bold;
+}
+
+/* strugel section */
+
+.struggle {
+margin: 4rem auto;
+max-width: 800px;
+padding: 2rem;
+background: #fff5f5;
+border-radius: 20px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.struggle h2 {
+text-align: center;
+font-size: 1.8rem;
+margin-bottom: 1.5rem;
+}
+
+.struggle-list {
+display: grid;
+gap: 1.5rem;
+}
+
+.struggle-item {
+background: white;
+border-left: 6px solid #ff6b6b;
+padding: 1rem;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+display: flex;
+align-items: center;
+gap: 1rem;
+transition: transform 0.2s ease-in-out;
+}
+
+.struggle-item:hover {
+transform: translateX(5px) rotate(-1deg);
+}
+
+.struggle-item img {
+width: 80px;
+height: 80px;
+border-radius: 10px;
+object-fit: cover;
+}
+
+.struggle-item p {
+margin: 0;
+font-size: 1rem;
+}
+
+.struggle-item small {
+display: block;
+margin-top: 0.3rem;
+color: #777;
+font-size: 0.9rem;
+}
+
+
+
+section.projects {
+margin-top: 80px;
+}
+
+/* Blog section wrapper */
+.blog-section {
+width: 90%;
+margin: 3rem auto;
+font-family: 'Inter', sans-serif;
+text-align: center;
+/* kalau mau fix tinggi, aktifkan: */
+/* height: 400px; */
+}
+
+#blog-swiper{
+  height: 350px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  display: none;
+}
+/* Swiper container */
+.swiper {
+width: 100%;
+height: auto; /* biarkan auto menyesuaikan isi */
+}
+
+/* Pagination custom ala Linux */
+.swiper-pagination {
+display: flex;
+justify-content: center;
+gap: 8px;
+margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+width: 14px;
+height: 14px;
+border-radius: 2px; /* kotak ala terminal */
+background: #555; 
+opacity: 0.6;
+transition: all 0.3s ease;
+box-shadow: inset 0 0 2px #000;
+}
+
+.swiper-pagination-bullet:nth-child(1) { background: #34d399; } /* hijau */
+.swiper-pagination-bullet:nth-child(2) { background: #3b82f6; } /* biru */
+.swiper-pagination-bullet:nth-child(3) { background: #ef4444; } /* merah */
+.swiper-pagination-bullet:nth-child(4) { background: #facc15; } /* kuning */
+.swiper-pagination-bullet:nth-child(5) { background: #9ca3af; } /* abu */
+
+.swiper-pagination-bullet-active {
+opacity: 1;
+transform: scale(1.3);
+box-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+/* Blog title */
+.blog-title {
+font-size: 2rem;
+margin-bottom: .5rem;
+}
+
+.blog-subtitle {
+color: #555;
+margin-bottom: 2rem;
+}
+
+/* Blog card */
+.blog-card {
+background: #fff;
+color: #222;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,.08);
+min-height: 260px;
+overflow: hidden;
+text-align: left;
+border: 1px solid #eee;
+}
+
+.terminal-header {
+background: #f5f5f5;
+padding: .5rem;
+display: flex;
+gap: .4rem;
+}
+
+.terminal-header .dot {
+width: 12px; 
+height: 12px; 
+border-radius: 50%;
+display: inline-block;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminal-body {
+padding: 1.2rem;
+font-family: monospace;
+}
+
+.prompt {
+color: #00aa55;
+margin: 0 0 .5rem 0;
+}
+
+.meme {
+color: #666;
+font-style: italic;
+margin-top: 1rem;
+}
+
+.meme {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #f9f9f9;
+  border-left: 4px solid #ff4081;
+  border-radius: 8px;
+}
