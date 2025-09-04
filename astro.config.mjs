@@ -6,5 +6,8 @@ export default defineConfig({
   base: '',                    // atau '/blog/' kalau deploy di subfolder
   output: 'static',
   integrations: [sitemap()],
+  build: {
+    cssCodeSplit: false // Gabungkan semua CSS ke 1 file
+  }
 });
 

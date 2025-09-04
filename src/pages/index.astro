@@ -8,6 +8,7 @@ const projects = await getCollection("projects");
 const struggles = await getCollection("struggle");
 
 import "../styles/home.css";
+import "../styles/swiper-bundle.min.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
@@ -118,6 +119,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       document.getElementById("quote").innerText =
         quotes[Math.floor(Math.random() * quotes.length)];
     </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"
+      integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
